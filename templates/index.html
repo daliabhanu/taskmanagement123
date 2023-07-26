@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management</title>
+</head>
+<body>
+    <h1>Task List</h1>
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task.name }} | {{ task.description }} | {{ task.deadline }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add a New Task</h2>
+    <a href="/add">Add Task</a>
+</body>
+</html>
